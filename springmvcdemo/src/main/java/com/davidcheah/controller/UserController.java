@@ -15,6 +15,7 @@ public class UserController {
 	@Autowired
 	private UserService service;
 
+	//http://localhost:8080/users
 	@RequestMapping(value = "/users", method = RequestMethod.GET)
 	public List<User> getUsers() {
 		List<User> users = service.retrieveUsers();
