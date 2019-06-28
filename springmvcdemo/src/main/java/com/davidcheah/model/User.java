@@ -8,6 +8,10 @@ public class User {
 		this.email = email;
 	}
 
+	public User() {
+		super();
+	}
+
 	private int id;
 	private String name;
 	private String email;
