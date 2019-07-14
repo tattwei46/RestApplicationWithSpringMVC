@@ -52,13 +52,13 @@ public class UserService {
 	}
 
 	public User update(int id, User updatedUser) {
-		User user = getUser(id);
-		if (user == null || updatedUser == null) {
+		User foundUser = getUser(id);
+		if (foundUser == null || updatedUser == null) {
 			return null;
 		}
-		user.setEmail(updatedUser.getEmail());
-		user.setName(updatedUser.getName());
-		return user;
+		foundUser.setEmail(updatedUser.getEmail());
+		foundUser.setName(updatedUser.getName());
+		return foundUser;
 	}
 
 }
